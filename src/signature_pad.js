@@ -492,7 +492,8 @@ SignaturePad.prototype.fromData = function (pointGroups) {
     rawPoint => this._drawDot(rawPoint),
   );
 
-  this._data = pointGroups;
+  // this._data = pointGroups;
+  this._data = pointGroups ? pointGroups : [];
 };
 
 SignaturePad.prototype.toData = function () {
